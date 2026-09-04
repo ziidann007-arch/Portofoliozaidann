@@ -1793,3 +1793,421 @@ body.light footer a:hover {
         display: none;
     }
 }
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Semua section jangan sampai melebar */
+section,
+main,
+footer,
+.navbar {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .brand {
+        max-width: calc(100% - 60px);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 110px 24px 70px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 13vw, 64px);
+        line-height: 1;
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /* FOTO */
+    .profile-area {
+        width: 100%;
+        height: 390px;
+        margin: 45px auto 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .profile-photo {
+        width: 230px;
+        height: 230px;
+        z-index: 3;
+    }
+
+    .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ring-one {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ring-two {
+        width: 310px;
+        height: 310px;
+    }
+
+    .profile-light {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-note {
+        bottom: 25px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .page-number {
+        display: none;
+    }
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    .section {
+        width: 100%;
+        padding: 80px 24px;
+        box-sizing: border-box;
+    }
+
+    .section-label {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .section-heading {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.1;
+    }
+
+    .section-heading p {
+        max-width: 500px;
+        margin: 15px auto 0;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .about-heading,
+    .about-text {
+        width: 100%;
+        max-width: 550px;
+        text-align: center;
+    }
+
+    .about-heading h2 {
+        font-size: clamp(34px, 9vw, 50px);
+        line-height: 1.1;
+    }
+
+    .about-info {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .about-info > div {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .project-list {
+        width: 100%;
+    }
+
+    .project-item {
+        width: 100%;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-template-columns: 40px 1fr 30px;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .project-info {
+        min-width: 0;
+    }
+
+    .project-info h3 {
+        font-size: 18px;
+    }
+
+    .project-info p {
+        font-size: 13px;
+    }
+
+    .project-tech {
+        display: none;
+    }
+
+    /* =========================
+       CERTIFICATES
+    ========================= */
+
+    .certificate-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .certificate {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .certificate img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* =========================
+       CV
+    ========================= */
+
+    .cv-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cv-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        padding: 35px 25px;
+        box-sizing: border-box;
+    }
+
+    .cv-text {
+        width: 100%;
+    }
+
+    .cv-text h2 {
+        font-size: clamp(32px, 9vw, 48px);
+        line-height: 1.1;
+    }
+
+    .cv-decoration {
+        display: none;
+    }
+
+    /* =========================
+       MEDIA
+    ========================= */
+
+    .media-section {
+        width: 100%;
+        padding: 70px 24px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .media-section h2 {
+        font-size: clamp(32px, 9vw, 46px);
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .media-list {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .media-item {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px 5px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .media-name {
+        font-size: 16px;
+    }
+
+    .media-account {
+        font-size: 12px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
+
+
+/* HP KECIL */
+@media (max-width: 480px) {
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .profile-area {
+        height: 350px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ring-one {
+        width: 240px;
+        height: 240px;
+    }
+
+    .ring-two {
+        width: 275px;
+        height: 275px;
+    }
+
+    .profile-light {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .certificate-grid {
+        gap: 10px;
+    }
+
+    .project-item {
+        grid-template-columns: 30px 1fr 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
